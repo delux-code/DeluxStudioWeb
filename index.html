@@ -1,86 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>DeluxStudiosWeb</title>
 <style>
 body {
-background-color: #595959;
-color: #ffffff;
-font-family: 'Segoe UI', sans-serif;
-padding: 30px;
-max-width: 800px;
-margin: 0 auto;
+    background-color: #595959; /* Tu fondo gris */
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;                 /* 👈 CORREGIDO: Eliminamos el centrado que rompía el menú */
+    padding: 0;
 }
 .sidebar {
-width: 300PX;
-background-color: #242424;
-color: #ffffff;
-height: 100vh;
-position: fixed;
-padding: 20px;
-box-sizing: border-box;
+    width: 300px;              /* Ancho de tu menú */
+    background-color: #242424; /* Color oscuro del menú */
+    color: #ffffff;
+    height: 100vh;
+    position: fixed;           /* Se queda clavado a la izquierda */
+    left: 0;                   /* 👈 Asegura que empiece exactamente en el borde izquierdo */
+    top: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .sidebar h3 {
-color: #ffffff;
-margin-top: 0;
-border-bottom: 1px solid #333;
-padding-bottom: 10px;
+    color: #ffffff;
+    margin-top: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
 }
 .sidebar ul {
-list-style: none;
-padding: 0;
-margin: 20px 0;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
 }
 .sidebar li {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 .sidebar a {
-color: #ffffff;
-text-decoration: none;
-font-size: 1.1rem;
-display: block;
-padding: 8px;
-border-radius: 4px;
-transition: 0.2s;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.2s;
 }
 .sidebar a:hover {
-background-color: #1DCDF0;
-color: #000000;
+    background-color: #1DCDF0;
+    color: #000000;
 }
 .contenido {
-margin-left: 320px;
-padding: 40px;
-max-width: 800px;
-width: 100%;
+    margin-left: 340px;        /* 👈 Deja espacio libre para que el menú de 300px no tape nada */
+    padding: 40px;
+    max-width: 800px;          
 }
 img {
-width: 400px;
-height: auto;
-display: block;
-margin: 20px auto;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 </style>
 </head>
 <body>
 <div class="sidebar">
-<h3>Menú</h3>
-<ul>
-<li><a href="#">Acerca de DeluxStudio</a></li>
-<li><a href="#">Juegos</a></li>
-<li><a href="#">Redes</a></li>
-</ul>
+    <h3>Menú</h3>
+    <ul>
+        <li><a href="#">Acerca de DeluxStudio</a></li>
+        <li><a href="#">Juegos</a></li>
+        <li><a href="#">Redes</a></li>
+    </ul>
 </div>
-  <div class="contenido">
-        <h1>Delux Studios</h1>
-        
-        <h2>¿Qué es Delux Studios?</h2>
-        <p>Delux Studios es un estudio de un solo desarrollador que crea videojuegos de distintos tipos, él es argentino.</p>
-        
-        <h2>¿Qué juegos tiene Delux Studios?</h2>
-        <p>Delux Studios tiene juegos para plataformas como game boy (con la chorivenganza), etc...</p>
-        
-        <img src="fotocanal.png" alt="Logo de Delux Studios">
-    </div>
+<div class="contenido">
+    <h1>Delux Studios</h1>
+    
+    <h2>¿Qué es Delux Studios?</h2>
+    <p>Delux Studios es un estudio de un solo desarrollador que crea videojuegos de distintos tipos, él es argentino.</p>
+    
+    <h2>¿Qué juegos tiene Delux Studios?</h2>
+    <p>Delux Studios tiene juegos para plataformas como game boy (con la chorivenganza), etc...</p>
+    
+    <img src="fotocanal.png" alt="Logo de Delux Studios">
+</div>
 </body>
 </html>
